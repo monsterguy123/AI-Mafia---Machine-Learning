@@ -9,7 +9,7 @@ def send_html_email():
     load_dotenv()
 
     sender = "deepakbisht9891@gmail.com"
-    recipient = "deepak10621202021@msijanakpuri.com"
+    recipients = ["jyotibisht9891@gmail.com", "deepak10621202021@msijanakpuri.com"]
     subject = "🚀 AI Mafia - Machine Learning Batch Announcement"
 
     # Read Gmail app password from .env
@@ -49,7 +49,7 @@ def send_html_email():
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = sender
-    msg["To"] = recipient
+    msg["To"] = ", ".join(recipients)
 
     # Attach HTML content
     msg.attach(MIMEText(html, "html"))
