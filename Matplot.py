@@ -29,3 +29,29 @@ import matplotlib.pyplot as plt
 
 # ---------------------------------#---------------------------------#
 #plot histogram
+# ages = [2,3,4,5,7,9,10,12,23,34,45,56,67,32,45,53,64,76,78,98]
+# range = (0,100)
+# bins = 10
+# plt.hist(ages,bins,range,color='red',histtype='bar',rwidth=0.8)
+# plt.show()
+# plt.close()
+
+# ---------------------------------#---------------------------------#
+#plotting scatter plot
+# x = [1,2,3,4,5,6,7,8,9,10]
+# y = [2,4,5,7,6,8,9,11,12,12]
+# plt.scatter(x,y,label='stars',color="blue",marker="*",s=30)
+# plt.legend()
+# plt.show()
+# plt.close()
+
+#plotting pie char
+# activities = ['eat','sleep','work','play']
+
+# slices = [3,7,8,9]
+
+# colors = ['r','m','g','b']
+
+# plt.pie(slices,labels = activities,colors=colors,startangle=90,shadow=True,explode=(0,0,0.1,0),radius=1.2,autopct='%1.1f%%')
+
+# plt.show()
